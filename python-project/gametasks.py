@@ -35,7 +35,7 @@ def getUserScore(userName):
 
 def updateUserScore(newUser, userName, score):
     content = []
-    if newUser == "true":
+    if newUser == True:
         newUserScore = open(filepath, 'a')
         newUserScore.write([userName, score])
         newUserScore.close()
